@@ -2,6 +2,7 @@
 
 namespace Builder;
 
+//Product
 public class Car
 {
     private readonly string _carType;
@@ -30,6 +31,7 @@ public class Car
     }
 }
 
+//Builder
 public abstract class CarBuilder
 {
     public Car Car {  get; private set; }
@@ -43,6 +45,7 @@ public abstract class CarBuilder
     public abstract void BuildFrame();
 }
 
+//ConcreteBuilder
 public class MiniBuilder : CarBuilder
 {
     public MiniBuilder() : base("Mini")
@@ -60,6 +63,7 @@ public class MiniBuilder : CarBuilder
     }
 }
 
+//ConcreteBuilder
 public class BMWBuilder : CarBuilder
 {
     public BMWBuilder() : base("BMW")
@@ -77,6 +81,7 @@ public class BMWBuilder : CarBuilder
     }
 }
 
+//Director
 public class Garage
 {
     private CarBuilder _carBuilder;

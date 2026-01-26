@@ -44,6 +44,7 @@ public interface ICityAdapter
 }
 
 //They are incompatible now, but we compatible them by implementing the ICityAdapter
+
 //Adapter
 public class CityAdapter : ExternalSystem, ICityAdapter
 {

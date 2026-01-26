@@ -44,21 +44,19 @@ public interface ICityAdapter
 }
 
 //They are incompatible now, but we compatible them by implementing the ICityAdapter
+
 //Adapter
 public class CityAdapter : ICityAdapter
 {
-    //public ExternalSystem externalSystem {  get; private set; } = new ExternalSystem();
-    private ExternalSystem _externalSystem;
+    public ExternalSystem externalSystem {  get; private set; } = new ExternalSystem();
 
     public CityAdapter()
     {
-        _externalSystem = new ExternalSystem();
     }
 
     public City GetCity()
     {
-        //CityFromExternalSystem cityFromExternalSystem = externalSystem.GetCity();
-        CityFromExternalSystem cityFromExternalSystem = _externalSystem.GetCity(); 
+        CityFromExternalSystem cityFromExternalSystem = externalSystem.GetCity();
 
         return new City($"{cityFromExternalSystem.Name} - {cityFromExternalSystem.NickName}", cityFromExternalSystem.Inhabitants);
     }

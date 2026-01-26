@@ -1,4 +1,4 @@
-﻿using static AbstractFactory.Implementation;
+﻿using AbstractFactory;
 
 Console.Title = "Abstract Factory";
 

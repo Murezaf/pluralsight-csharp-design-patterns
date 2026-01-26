@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnemyGameFactoryMethod", "EnemyGameFactoryMethod.csproj", "{956571C3-531F-4288-9716-804E95D7AA45}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{956571C3-531F-4288-9716-804E95D7AA45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{956571C3-531F-4288-9716-804E95D7AA45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{956571C3-531F-4288-9716-804E95D7AA45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{956571C3-531F-4288-9716-804E95D7AA45}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE1AC837-A5DF-47F7-AB41-ED4264B32325}
+	EndGlobalSection
+EndGlobal

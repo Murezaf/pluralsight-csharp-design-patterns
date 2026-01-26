@@ -1,7 +1,8 @@
 ﻿//using ObjectAdapter;
 //using ClassAdapter;
+using InjectionObjectAdapter;
 
-//Console.Title = "Adapter";
+Console.Title = "Adapter";
 
 //ICityAdapter adapter = new CityAdapter();
 
@@ -9,7 +10,6 @@
 
 //Console.WriteLine($"{city.Fullname}, {city.Inhabitants}");
 
-using InjectionObjectAdapter;
 IExternalSystem externalSystem = new ExternalSystem();
 
 ICityAdapter cityAdapter = new CityAdapter(externalSystem);

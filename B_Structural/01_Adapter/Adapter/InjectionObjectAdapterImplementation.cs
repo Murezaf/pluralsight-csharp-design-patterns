@@ -1,7 +1,7 @@
 ﻿namespace InjectionObjectAdapter;
 
 //-------------------------------------------------------------------------------------------
-//injection instead of ad hoc newing
+//injection instead of ad hoc newing in Adapter class
 
 //helper
 public class CityFromExternalSystem

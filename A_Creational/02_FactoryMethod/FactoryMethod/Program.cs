@@ -1,13 +1,16 @@
-﻿using FactoryMethod.Domain;
-using FactoryMethod.Infrastructure;
+﻿using FactoryMethod;
 
 Console.Title = "Factory Method";
 
-List<DiscountFactory> factories = new List<DiscountFactory>() { new CountryDiscountFactory("Belgium"),
-    new CountryDiscountFactory("Germany"), new CodeDiscountFactory(new Guid()) };
+CodeDiscountFactory codeDiscountFactory = new CodeDiscountFactory(new Guid());
+CountryDiscountFactory countryDiscountFactory = new CountryDiscountFactory("Belgium");
 
-foreach(DiscountFactory factory in factories)
+List<DiscountFactory> factories = new List<DiscountFactory>();
+factories.Add(codeDiscountFactory);
+factories.Add(countryDiscountFactory);
+
+foreach (DiscountFactory factory in factories)
 {
     DiscountService discountService = factory.CreateDiscountService();
-    Console.WriteLine($"Discount Persentage: {discountService.DiscountPersentage} comming from: {discountService}");
+    Console.WriteLine($"Percentage {discountService.DiscountPercentage} coming from {discountService}");
 }
